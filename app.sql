@@ -1,6 +1,6 @@
-create database egg_house;
+create database egg_paradigm;
 
-use egg_house;
+use egg_paradigm;
 
 --- 用户表
 create table `user`(
