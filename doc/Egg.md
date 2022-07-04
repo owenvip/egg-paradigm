@@ -18,7 +18,7 @@
 - 插件
 1. lib/plugin下增加新插件
 2. config/plugin.js中注
-3. 在app.js中push后使用
+3. 如果插件中含中间件，需在app.js中push后使用
 4. config/config.default.js中，`config.[pluginName]为插件增加配置
 5. 插件也是一个egg应用，目录规则遵守egg规范
 
