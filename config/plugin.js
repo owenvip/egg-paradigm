@@ -30,3 +30,18 @@ exports.redis = {
   enable: true,
   package: 'egg-redis',
 };
+
+exports.allowHosts = {
+  enable: true,
+  path: path.join(__dirname, '../lib/plugin/egg-allowHosts'),
+};
+
+exports.interfaceLimit = {
+  enable: true,
+  path: path.join(__dirname, '../lib/plugin/egg-interfaceLimit'),
+};
+
+exports.interfaceCache = {
+  enable: true,
+  path: path.join(__dirname, '../lib/plugin/egg-interfaceCache'),
+};

@@ -14,5 +14,11 @@ module.exports = app => {
     },
   };
 
-  app.config.coreMiddleware.push('auth');
+  const mids = app.config.coreMiddleware;
+  app.config.coreMiddleware = [ ...mids, ...[
+    'auth',
+    'allowHosts',
+    'interfaceLimit',
+    'interfaceCache',
+  ] ];
 };
